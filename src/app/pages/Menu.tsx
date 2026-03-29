@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { ChefHat } from "lucide-react";
 
 export function Menu() {
-  const whatsappNumber = "5511999999999";
+  const whatsappNumber = "5511992873425";
   const message = "Olá! Gostaria de fazer um pedido do cardápio Don Mangione.";
   
   const handleWhatsApp = () => {
