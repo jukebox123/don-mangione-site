@@ -19,11 +19,17 @@ export function Header() {
         <div className="flex items-center justify-between">
           
           {/* Logo (SEM FIGMA) */}
-          <Link to="/" className="flex items-center">
-            <span className="text-white font-bold text-xl">
-              Don <span className="text-amber-500">Mangione</span>
-            </span>
-          </Link>
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="/images/logo.png" 
+            alt="Don Mangione" 
+            className="h-10 w-auto object-contain"
+          />
+  
+          <span className="text-white font-bold text-xl leading-none">
+            Don <span className="text-amber-500">Mangione</span>
+          </span>
+        </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
