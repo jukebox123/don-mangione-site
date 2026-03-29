@@ -12,10 +12,10 @@ export function Menu() {
 
   // IMAGENS TEMPORÁRIAS (placeholder)
   const menuPages = [
-    "https://via.placeholder.com/800x1200?text=Cardapio+1",
-    "https://via.placeholder.com/800x1200?text=Cardapio+2",
-    "https://via.placeholder.com/800x1200?text=Cardapio+3",
-    "https://via.placeholder.com/800x1200?text=Cardapio+4"
+  "/images/cardapio1.jpg",
+  "/images/cardapio2.jpg",
+  "/images/cardapio3.jpg",
+  "/images/cardapio4.jpg"
   ];
 
   return (
