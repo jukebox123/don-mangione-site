@@ -1,6 +1,9 @@
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+
+// 👇 IMPORT DA LOGO (ESSENCIAL)
+import logo from "../assets/logo.png";
 
 export function Header() {
   const location = useLocation();
@@ -18,18 +21,18 @@ export function Header() {
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           
-          {/* Logo (SEM FIGMA) */}
-        <Link to="/" className="flex items-center gap-3">
-          <img 
-            src="/images/logo.png" 
-            alt="Don Mangione" 
-            className="h-10 w-auto object-contain"
-          />
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src={logo}
+              alt="Don Mangione" 
+              className="h-10 w-auto object-contain"
+            />
   
-          <span className="text-white font-bold text-xl leading-none">
-            Don <span className="text-amber-500">Mangione</span>
-          </span>
-        </Link>
+            <span className="text-white font-bold text-xl leading-none">
+              Don <span className="text-amber-500">Mangione</span>
+            </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
