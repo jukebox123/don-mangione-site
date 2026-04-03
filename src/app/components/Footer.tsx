@@ -1,4 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone, Clock } from "lucide-react";
+import logo from "@/assets/sua-logo.png"; // ajuste o nome do arquivo
 
 export function Footer() {
   return (
@@ -8,9 +9,17 @@ export function Footer() {
           
           {/* Brand */}
           <div>
-            <h2 className="text-white font-bold text-2xl mb-4">
-              Don <span className="text-amber-500">Mangione</span>
-            </h2>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src={logo}
+                alt="Don Mangione"
+                className="h-10 object-contain"
+              />
+              <span className="text-white font-bold text-xl">
+                Don <span className="text-amber-500">Mangione</span>
+              </span>
+            </div>
+
             <p className="text-sm text-zinc-400">
               Experiência única em churrasco premium e chope artesanal em um
               ambiente sofisticado e acolhedor.
