@@ -63,11 +63,11 @@ export function Home() {
     <div className="pt-16">
       {/* Hero */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1544536542-85eec703819d?w=1080"
             alt="Don Mangione"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/70 via-zinc-950/50 to-zinc-950" />
         </div>
@@ -104,7 +104,12 @@ export function Home() {
         <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
           {highlights.map((h, i) => (
             <div key={i}>
-              <img src={h.image} className="w-full h-64 object-cover rounded-lg mb-4" />
+              <div className="overflow-hidden rounded-lg mb-4">
+                <img
+                  src={h.image}
+                  className="w-full h-64 object-cover transition-all duration-500 hover:scale-110 hover:brightness-110"
+                />
+              </div>
               <h3 className="text-white text-xl">{h.title}</h3>
               <p className="text-zinc-400">{h.description}</p>
             </div>
@@ -116,14 +121,19 @@ export function Home() {
       <section className="py-20 bg-zinc-950">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {gallery.map((img, i) => (
-            <img key={i} src={img} className="w-full h-64 object-cover rounded-lg" />
+            <div key={i} className="overflow-hidden rounded-lg">
+              <img
+                src={img}
+                className="w-full h-64 object-cover transition-all duration-500 hover:scale-110 hover:brightness-110"
+              />
+            </div>
           ))}
         </div>
       </section>
 
       {/* Depoimentos */}
       <section className="py-20 bg-zinc-900">
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div key={i} className="bg-zinc-800 p-6 rounded-lg">
               <p className="text-white mb-4">"{t.text}"</p>
