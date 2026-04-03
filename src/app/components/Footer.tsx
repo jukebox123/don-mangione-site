@@ -13,7 +13,7 @@ export function Footer() {
               <img
                 src={logo}
                 alt="Don Mangione"
-                className="h-14 object-contain"
+                className="h-20 object-contain"
               />
               <span className="text-white font-bold text-2xl leading-none">
                 Don <span className="text-amber-500">Mangione</span>
