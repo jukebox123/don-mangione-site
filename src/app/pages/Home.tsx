@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ChevronRight, Flame, Beer, Sparkles, Star } from "lucide-react";
 
 export function Home() {
-  const whatsappNumber = "5511999999999";
+  const whatsappNumber = "5511999999";
   const message = "Olá! Gostaria de fazer uma reserva no Don Mangione.";
   
   const handleWhatsApp = () => {
@@ -45,17 +45,14 @@ export function Home() {
     {
       name: "Ricardo Silva",
       text: "Melhor churrasco de Salto! O ambiente é incrível e o atendimento impecável. Sempre volto com a família.",
-      rating: 5,
     },
     {
       name: "Ana Paula",
       text: "Experiência maravilhosa! As tábuas de carnes são simplesmente perfeitas e o chope estava no ponto.",
-      rating: 5,
     },
     {
       name: "Carlos Mendes",
       text: "Lugar aconchegante com comida de primeira qualidade. Recomendo muito para jantares especiais!",
-      rating: 5,
     },
   ];
 
@@ -83,17 +80,48 @@ export function Home() {
               <br />
               <span className="text-white">Experiência Premium</span>
             </h1>
+
             <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-2xl mx-auto">
               Descubra o verdadeiro prazer da carne nobre e chope artesanal
             </p>
 
+            {/* BOTÕES TURBINADOS */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/cardapio" className="bg-amber-600 text-white px-8 py-4 rounded-lg">
+              
+              {/* Ver Cardápio */}
+              <Link
+                to="/cardapio"
+                className="group bg-amber-600 text-white px-8 py-4 rounded-lg
+                flex items-center justify-center gap-2
+                transition-all duration-300
+                hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+                hover:shadow-xl hover:shadow-amber-500/30
+                active:scale-95"
+              >
                 Ver Cardápio
+                <ChevronRight
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                  size={20}
+                />
               </Link>
-              <button onClick={handleWhatsApp} className="bg-white/10 text-white px-8 py-4 rounded-lg">
+
+              {/* Reservar Mesa */}
+              <button
+                onClick={handleWhatsApp}
+                className="group bg-white/10 text-white px-8 py-4 rounded-lg
+                flex items-center justify-center gap-2
+                transition-all duration-300 backdrop-blur-sm
+                hover:bg-white/20 hover:scale-105 hover:-translate-y-1
+                hover:shadow-xl hover:shadow-white/10
+                active:scale-95"
+              >
                 Reservar Mesa
+                <ChevronRight
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                  size={20}
+                />
               </button>
+
             </div>
           </motion.div>
         </div>
