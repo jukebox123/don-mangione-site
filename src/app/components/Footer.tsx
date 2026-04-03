@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone, Clock } from "lucide-react";
-import logo from "@/assets/logo.png"; // ajuste o nome do arquivo
+import logo from "@/assets/sua-logo.png"; // ajuste o nome do arquivo
 
 export function Footer() {
   return (
@@ -13,9 +13,9 @@ export function Footer() {
               <img
                 src={logo}
                 alt="Don Mangione"
-                className="h-10 object-contain"
+                className="h-14 object-contain"
               />
-              <span className="text-white font-bold text-xl">
+              <span className="text-white font-bold text-2xl leading-none">
                 Don <span className="text-amber-500">Mangione</span>
               </span>
             </div>
