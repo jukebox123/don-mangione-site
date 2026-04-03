@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ChevronRight, Flame, Beer, Sparkles, Star } from "lucide-react";
 
 export function Home() {
-  const whatsappNumber = "5511999999";
+  const whatsappNumber = "5511992873425";
   const message = "Olá! Gostaria de fazer uma reserva no Don Mangione.";
   
   const handleWhatsApp = () => {
@@ -45,20 +45,23 @@ export function Home() {
     {
       name: "Ricardo Silva",
       text: "Melhor churrasco de Salto! O ambiente é incrível e o atendimento impecável. Sempre volto com a família.",
+      rating: 5,
     },
     {
       name: "Ana Paula",
       text: "Experiência maravilhosa! As tábuas de carnes são simplesmente perfeitas e o chope estava no ponto.",
+      rating: 5,
     },
     {
       name: "Carlos Mendes",
       text: "Lugar aconchegante com comida de primeira qualidade. Recomendo muito para jantares especiais!",
+      rating: 5,
     },
   ];
 
   return (
     <div className="pt-16">
-      {/* Hero */}
+      {/* HERO */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
@@ -85,10 +88,9 @@ export function Home() {
               Descubra o verdadeiro prazer da carne nobre e chope artesanal
             </p>
 
-            {/* BOTÕES TURBINADOS */}
+            {/* BOTÕES */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               
-              {/* Ver Cardápio */}
               <Link
                 to="/cardapio"
                 className="group bg-amber-600 text-white px-8 py-4 rounded-lg
@@ -99,13 +101,9 @@ export function Home() {
                 active:scale-95"
               >
                 Ver Cardápio
-                <ChevronRight
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                  size={20}
-                />
+                <ChevronRight className="transition-transform group-hover:translate-x-1" size={20} />
               </Link>
 
-              {/* Reservar Mesa */}
               <button
                 onClick={handleWhatsApp}
                 className="group bg-white/10 text-white px-8 py-4 rounded-lg
@@ -116,10 +114,7 @@ export function Home() {
                 active:scale-95"
               >
                 Reservar Mesa
-                <ChevronRight
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                  size={20}
-                />
+                <ChevronRight className="transition-transform group-hover:translate-x-1" size={20} />
               </button>
 
             </div>
@@ -127,25 +122,31 @@ export function Home() {
         </div>
       </section>
 
-      {/* Destaques */}
+      {/* DESTAQUES */}
       <section className="py-20 bg-zinc-900">
         <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
           {highlights.map((h, i) => (
             <div key={i}>
+              
               <div className="overflow-hidden rounded-lg mb-4">
                 <img
                   src={h.image}
                   className="w-full h-64 object-cover transition-all duration-500 hover:scale-110 hover:brightness-110"
                 />
               </div>
-              <h3 className="text-white text-xl">{h.title}</h3>
+
+              <div className="flex items-center gap-2 mb-2">
+                <h.icon className="text-amber-500" size={22} />
+                <h3 className="text-white text-xl">{h.title}</h3>
+              </div>
+
               <p className="text-zinc-400">{h.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Galeria */}
+      {/* GALERIA */}
       <section className="py-20 bg-zinc-950">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {gallery.map((img, i) => (
@@ -159,13 +160,25 @@ export function Home() {
         </div>
       </section>
 
-      {/* Depoimentos */}
+      {/* DEPOIMENTOS */}
       <section className="py-20 bg-zinc-900">
         <div className="container mx-auto px-4 grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div key={i} className="bg-zinc-800 p-6 rounded-lg">
+              
+              <div className="flex mb-3">
+                {[...Array(t.rating)].map((_, index) => (
+                  <Star
+                    key={index}
+                    size={16}
+                    className="text-amber-500 fill-amber-500"
+                  />
+                ))}
+              </div>
+
               <p className="text-white mb-4">"{t.text}"</p>
               <p className="text-amber-500">{t.name}</p>
+
             </div>
           ))}
         </div>
