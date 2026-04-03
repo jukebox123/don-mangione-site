@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone, Clock } from "lucide-react";
-import logo from "@/assets/sua-logo.png"; // ajuste o nome do arquivo
+import logo from "@/assets/logo.png"; // ajuste o nome do arquivo
 
 export function Footer() {
   return (
