@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { Heart, Users, Award, ChefHat } from "lucide-react";
+import { Link } from "react-router";
+import { Heart, Users, Award, ChefHat, ChevronRight } from "lucide-react";
 
 export function About() {
   const values = [
@@ -38,7 +39,7 @@ export function About() {
           <img
             src="https://images.unsplash.com/photo-1771308161631-775781e86745?w=1080"
             alt="Don Mangione Interior"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/70 to-zinc-950" />
         </div>
@@ -102,7 +103,12 @@ export function About() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {values.map((value, i) => (
-              <div key={i} className="bg-zinc-900 p-8 rounded-lg">
+              <div
+                key={i}
+                className="bg-zinc-900 p-8 rounded-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/10"
+              >
                 <value.icon className="text-amber-500 mb-4" size={32} />
                 <h3 className="text-white text-xl mb-2">{value.title}</h3>
                 <p className="text-zinc-400">{value.description}</p>
@@ -117,9 +123,22 @@ export function About() {
         <h2 className="text-4xl text-white mb-4">
           Venha Nos Visitar
         </h2>
-        <a href="/contato" className="text-amber-500">
+
+        <Link
+          to="/contato"
+          className="group inline-flex items-center gap-2
+          bg-amber-600 text-white px-8 py-4 rounded-lg
+          transition-all duration-300
+          hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+          hover:shadow-xl hover:shadow-amber-500/30
+          active:scale-95"
+        >
           Ver Localização
-        </a>
+          <ChevronRight
+            className="transition-transform duration-300 group-hover:translate-x-1"
+            size={20}
+          />
+        </Link>
       </section>
     </div>
   );
