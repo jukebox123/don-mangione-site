@@ -1,5 +1,13 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Clock, MessageCircle, Instagram, Mail } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Clock,
+  MessageCircle,
+  Instagram,
+  Mail,
+  ChevronRight,
+} from "lucide-react";
 
 export function Contact() {
   const whatsappNumber = "5511992873425";
@@ -69,11 +77,14 @@ export function Contact() {
             <div
               key={i}
               onClick={info.action}
-              className={`bg-zinc-900 border border-amber-600/20 rounded-lg p-6 ${
-                info.action ? "cursor-pointer hover:bg-zinc-800 transition" : ""
-              }`}
+              className={`group bg-zinc-900 border border-amber-600/20 rounded-lg p-6
+              transition-all duration-300
+              ${info.action ? "cursor-pointer hover:bg-zinc-800 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/10" : ""}`}
             >
-              <info.icon className="text-amber-500 mb-4" size={32} />
+              <info.icon
+                className="text-amber-500 mb-4 transition-transform duration-300 group-hover:scale-110"
+                size={32}
+              />
               <h3 className="text-white font-semibold text-lg mb-1">
                 {info.title}
               </h3>
@@ -107,14 +118,20 @@ export function Contact() {
               />
             </div>
 
-            <div className="text-center mt-4">
+            <div className="text-center mt-6">
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Rua+Monsenhor+Couto+581+Salto+SP"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-500 hover:text-amber-400 font-semibold"
+                className="group inline-flex items-center gap-2
+                bg-amber-600 text-white px-6 py-3 rounded-lg
+                transition-all duration-300
+                hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+                hover:shadow-xl hover:shadow-amber-500/30
+                active:scale-95"
               >
                 Abrir no Google Maps
+                <ChevronRight className="transition-transform group-hover:translate-x-1" size={18} />
               </a>
             </div>
           </div>
@@ -132,12 +149,18 @@ export function Contact() {
               Acompanhe novidades, pratos e promoções
             </p>
 
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-4 flex-wrap">
+              
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-amber-600/10 hover:bg-amber-600/20 text-amber-500 px-6 py-3 rounded-lg flex items-center gap-2"
+                className="group bg-amber-600/10 text-amber-500 px-6 py-3 rounded-lg
+                flex items-center gap-2
+                transition-all duration-300
+                hover:bg-amber-600/20 hover:scale-105 hover:-translate-y-1
+                hover:shadow-lg hover:shadow-amber-500/20
+                active:scale-95"
               >
                 <Instagram size={20} />
                 Instagram
@@ -145,17 +168,23 @@ export function Contact() {
 
               <button
                 onClick={handleWhatsApp}
-                className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg flex items-center gap-2"
+                className="group bg-green-500 text-white px-6 py-3 rounded-lg
+                flex items-center gap-2
+                transition-all duration-300
+                hover:bg-green-600 hover:scale-105 hover:-translate-y-1
+                hover:shadow-lg hover:shadow-green-500/30
+                active:scale-95"
               >
                 <MessageCircle size={20} />
                 WhatsApp
               </button>
+
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-b from-zinc-950 to-zinc-900 text-center">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
@@ -168,10 +197,17 @@ export function Contact() {
 
             <button
               onClick={handleWhatsApp}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold"
+              className="group bg-amber-600 text-white px-8 py-4 rounded-lg
+              flex items-center justify-center gap-2 mx-auto
+              transition-all duration-300
+              hover:bg-amber-500 hover:scale-105 hover:-translate-y-1
+              hover:shadow-xl hover:shadow-amber-500/30
+              active:scale-95"
             >
               Fazer Reserva Agora
+              <ChevronRight className="transition-transform group-hover:translate-x-1" size={20} />
             </button>
+
           </motion.div>
         </div>
       </section>
