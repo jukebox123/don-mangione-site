@@ -37,8 +37,8 @@ export function Home() {
     "https://images.unsplash.com/photo-1761314037083-329b3050b351?w=1080",
     "https://images.unsplash.com/photo-1643988612981-0e25f77dfc7a?w=1080",
     "https://images.unsplash.com/photo-1743793055911-52e19beba5d8?w=1080",
-    "https://images.unsplash.com/photo-1764397514739-57a0ac81330d?w=1080",
-    "https://images.unsplash.com/photo-1544536542-85eec703819d?w=1080",
+    "https://i.imgur.com/yzg7t8q.jpeg=1080",
+    "https://i.imgur.com/rnRJNem.jpegw=1080",
   ];
 
   const testimonials = [
