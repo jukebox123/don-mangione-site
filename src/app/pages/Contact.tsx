@@ -152,7 +152,7 @@ export function Contact() {
             <div className="flex justify-center gap-4 flex-wrap">
               
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mangioneristorante/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-amber-600/10 text-amber-500 px-6 py-3 rounded-lg
