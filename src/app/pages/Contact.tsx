@@ -49,8 +49,8 @@ export function Contact() {
       icon: Clock,
       title: "Horário de Funcionamento",
       content: "Terça a Sábado: 11h00 - 15h00 (Almoço) // 18h00 - 23h00 (Jantar)" ,
-      subtitle: "Domingo: 09h00 - 15h00",
-      subtitle: "Segunda-feira: Fechado",
+      content: "Domingo: 09h00 - 15h00",
+      content: "Segunda-feira: Fechado",
     },
   ];
 
