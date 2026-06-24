@@ -35,7 +35,7 @@ export function Contact() {
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@mangioneristorante.com.br",
+      content: "administracao@mangioneristorante.com.br",
       subtitle: "Envie sua mensagem",
     },
     {
@@ -48,7 +48,8 @@ export function Contact() {
     {
       icon: Clock,
       title: "Horário de Funcionamento",
-      content: "Terça a Domingo: 11h30 - 23h00",
+      content: "Terça a Sábado: 11h00 - 15h00 (Almoço) // 18h00 - 23h00 (Jantar)" ,
+      subtitle: "Domingo: 09h00 - 15h00",
       subtitle: "Segunda-feira: Fechado",
     },
   ];
