@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "5511999999999"; // Número do WhatsApp
+  const whatsappNumber = "5511992873425"; // Número do WhatsApp
   const message = "Olá! Gostaria de fazer uma reserva no Don Mangione.";
   
   const handleClick = () => {
