@@ -47,8 +47,9 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <Clock size={18} className="text-amber-500 mt-0.5" />
                 <span>
-                  Ter-Dom: 11h30 - 23h00<br />
-                  Segunda: Fechado
+                  Terça a Sábado: 11h00 - 15h00 (Almoço) / 18h00 - 23h00 (Jantar)<br />
+                  Domingo: 09h00 - 15h00
+                  Segunda-feira: Fechado
                 </span>
               </div>
 
@@ -61,7 +62,7 @@ export function Footer() {
             <div className="flex gap-4">
               
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/mangioneristorante/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-amber-600/10 hover:bg-amber-600/20 rounded-full flex items-center justify-center"
@@ -70,7 +71,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://facebook.com"
+                href="https://www.instagram.com/mangioneristorante/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-amber-600/10 hover:bg-amber-600/20 rounded-full flex items-center justify-center"
