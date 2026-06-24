@@ -12,7 +12,7 @@ import {
 export function Contact() {
   const whatsappNumber = "5511992873425";
   const message = "Olá! Gostaria de fazer uma reserva no Don Mangione.";
-  
+
   const handleWhatsApp = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -48,9 +48,9 @@ export function Contact() {
     {
       icon: Clock,
       title: "Horário de Funcionamento",
-      content: "Terça a Sábado: 11h00 - 15h00 (Almoço) // 18h00 - 23h00 (Jantar)" ,
-      content: "Domingo: 09h00 - 15h00",
-      content: "Segunda-feira: Fechado",
+      content: "Terça a Sábado: 11h00 - 15h00 (Almoço) / 18h00 - 23h00 (Jantar)",
+      subtitle: "Domingo: 09h00 - 15h00",
+      subtitle2: "Segunda-feira: Fechado",
     },
   ];
 
