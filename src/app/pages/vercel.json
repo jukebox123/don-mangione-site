@@ -1,3 +1,8 @@
-git add vercel.json
-git commit -m "Fix React Router routes on Vercel"
-git push
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
