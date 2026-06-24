@@ -12,7 +12,7 @@ export function Menu() {
 
   // IMAGENS TEMPORÁRIAS (placeholder)
   const menuPages = [
-  "/images/cardapio1.jpg"
+  "/images/cardapio1.png"
   ];
 
   return (
