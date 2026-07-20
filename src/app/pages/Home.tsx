@@ -65,7 +65,7 @@ export function Home() {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1544536542-85eec703819d?w=1080"
+            src="https://i.imgur.com/ejWIVYc.jpeg=1080"
             alt="Don Mangione"
             className="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-105"
           />
