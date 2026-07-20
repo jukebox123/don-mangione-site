@@ -22,23 +22,23 @@ export function Home() {
       icon: Beer,
       title: "Chope Artesanal",
       description: "Variedade de chopes premium gelados no ponto perfeito",
-      image: "https://images.unsplash.com/photo-1774109049275-6b6fa2f7cd4a?w=1080",
+      image: "https://i.imgur.com/fXyDQRu.jpeg=1080",
     },
     {
       icon: Sparkles,
       title: "Ambiente Único",
       description: "Decoração sofisticada que une rusticidade e modernidade",
-      image: "https://images.unsplash.com/photo-1771308161631-775781e86745?w=1080",
+      image: "https://i.imgur.com/DIDiMY5.jpeg=1080",
     },
   ];
 
   const gallery = [
-    "https://images.unsplash.com/photo-1676300185579-ed2b14891d82?w=1080",
-    "https://images.unsplash.com/photo-1761314037083-329b3050b351?w=1080",
-    "https://images.unsplash.com/photo-1643988612981-0e25f77dfc7a?w=1080",
-    "https://images.unsplash.com/photo-1743793055911-52e19beba5d8?w=1080",
+    "https://i.imgur.com/Ep3fMT1.jpeg=1080",
+    "https://i.imgur.com/Kk9k0WQ.jpeg=1080",
+    "https://i.imgur.com/2Wurh5S.jpeg=1080",
+    "https://i.imgur.com/m3rNwNF.jpeg=1080",
     "https://i.imgur.com/yzg7t8q.jpeg=1080",
-    "https://i.imgur.com/rnRJNem.jpegw=1080",
+    "https://i.imgur.com/oiLBk9l.jpeg=1080",
   ];
 
   const testimonials = [
