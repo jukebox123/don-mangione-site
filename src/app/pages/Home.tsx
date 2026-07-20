@@ -16,7 +16,7 @@ export function Home() {
       icon: Flame,
       title: "Churrasco Premium",
       description: "Tábuas de carnes nobres selecionadas, preparadas com maestria",
-      image: "https://images.unsplash.com/photo-1544536542-85eec703819d?w=1080",
+      image: "https://i.imgur.com/ejWIVYc.jpeg=1080",
     },
     {
       icon: Beer,
