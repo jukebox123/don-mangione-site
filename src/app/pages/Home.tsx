@@ -37,8 +37,8 @@ export function Home() {
     "https://i.imgur.com/Kk9k0WQ.jpeg=1080",
     "https://i.imgur.com/2Wurh5S.jpeg=1080",
     "https://i.imgur.com/m3rNwNF.jpeg=1080",
-    "https://i.imgur.com/yzg7t8q.jpeg=1080",
-    "https://i.imgur.com/oiLBk9l.jpeg=1080",
+    "https://i.imgur.com/3eEwYBV.png=1080",
+    "https://i.imgur.com/TgrsktJ.png=1080",
   ];
 
   const testimonials = [
